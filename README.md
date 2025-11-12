@@ -1,2 +1,2 @@
 # petvet
-um site onde treino responsividade e treino coisas novas.
+um site onde treinei e aprendi sobre responsividade.
