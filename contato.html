@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title> PETVET- O Amigo do seu Pet- Contato - JS</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, inicial-scale=1" />
+	<link rel="icon" type="image/jpg" href="imagens/iconepet.jpg" />
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script language="javascript" type="text/javascript">
+		function validaclinica() { // inicio da função para validar campos, acionada ao clicar o botão enviar
+			var nome = contato.nome.value;
+			var email = contato.email.value;
+			var assunto = contato.assunto.value;
+
+
+			if (nome == "") {
+				alert('Por favor, Preencha o campo com seu nome!');
+				contato.nome.focus();
+				return false;
+			}
+
+			if (email == "") {
+				alert('Preencha o campo com seu email');
+				contato.email.focus();
+				return false;
+			}
+
+			if (assunto == "") {
+				alert('Preencha o campo Assunto, por favor!');
+				contato.assunto.focus();
+				return false;
+			}
+			// Se todas as validações forem válidas, envia os dados do formulário e exibe mensagem sem direcionar tela
+			alert("Dados enviados com sucesso!");
+			contato.reset(); //função JS reset campos
+
+		}//FIM FUNÇÃO
+	</script>
+</head>
+
+<body>
+	<div id="header">
+		<h1><img src="imagens/logonovo.png" /></h1>
+		<ul id="nav">
+			<li><a href="index.html">home</a></li>
+			<li><a href="clinica.html">clínica</a></li>
+			<li><a href="servico.html">serviços</a></li>
+			<li><a href="contato.html" class="ativa">contato</a></li>
+		</ul>
+	</div>
+	<div id="section_c">
+		<div class="contato">
+			<h1> Fale conosco!</h1>
+			<form name="contato" action="#" method="post"><!--nome form para validar JS-->
+				<table border="0">
+					<tr>
+						<td> <label>Nome</td>
+					</tr>
+					<tr>
+						<td><input type="text " name="nome" id="text1" size="50" placeholder="Preencha aqui o seu nome!"
+								autofocus /></label></td>
+					</tr>
+					<tr>
+						<td><label>E-mail</td>
+					</tr>
+					<tr>
+						<td><input type="email" name="email" id="text2" size="50"
+								placeholder="Preencha aqui o seu email!" autofocus /></label> </td>
+					</tr>
+					<tr>
+						<td> <label>Assunto</td>
+					</tr>
+					<tr>
+						<td><input type="text" name="assunto" id="text3" size="50"
+								placeholder="Preencha  aqui o assunto " autofocus /></label></td>
+					</tr>
+					<tr>
+						<td><textarea id="textarea" name="textarea " rows="10" cols="52"
+								placeholder="Deixe aqui seu comentário."></textarea></td></label>
+					</tr>
+					<tr>
+						<td><input type="submit" onclick="return validaclinica()" value="Enviar"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div class="contato1">
+			<h1>Nosso Endereço</h1>
+			<p> Avenida Carlos Magno 649 </p>
+			<p>Jardim Bela Vista </p>
+			<p> Americana/SP </p>
+			<p>(19) 3604-8707</p>
+			<p>petvet2020@gmail.com</p>
+		</div>
+	</div>
+
+	<div id="footer">
+		<p>André Mendes 2024 - &copy Todos os direitos reservados </p>
+	</div>
+
+</body>
+
+</html>

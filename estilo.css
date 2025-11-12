@@ -1,0 +1,239 @@
+/*Arquivo CSS PETVET  - página HOME*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #00000F;
+    font-family: arial;
+    margin-top: 5px;
+}
+
+/*Inicio do cabeçalho */
+#header {
+    width: 800px;
+    height: 140px;
+    margin: 0px auto;
+    background: #F8F8FF;
+}
+
+#header h1 {
+    display: block;
+    /*bloqueia linha*/
+    float: left;
+}
+
+#nav {
+    list-style: none;
+    /*retira marcadores*/
+    padding-left: 0px;
+    display: block;
+    float: left;
+    margin-left: 130px;
+    margin-top: 60px;
+}
+
+#nav li {
+    float: left;
+    margin-left: 60px;
+}
+
+#nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 8px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#nav a:hover {
+    border-bottom: 5px solid #FF0000;
+}
+
+ul#nav a.ativa {
+    border-bottom: 5px solid #FF0000;
+}
+
+/*fim do cabeçalho */
+/*inicio do banner */
+#banner {
+    margin-top: 15px;
+    width: 800px;
+    height: 247px;
+    margin: 0px auto;
+    position: relative;
+}
+
+/*fim do banner */
+/*inicio da section */
+#section {
+    width: 800px;
+    height: 150px;
+    background: #F0FFF0;
+    margin: 15px auto;
+    /* sem pixel pode ser % ou Em todos */
+}
+
+.article {
+    width: 250px;
+    float: left;
+    margin: 5px 8px;
+}
+
+.article h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.article p {
+    padding-top: 5px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+/*fim da section */
+/*inicio da rodape */
+#footer {
+    width: 800px;
+    height: 45px;
+    background: #FF6347;
+    float: left;
+    margin: 0 auto;
+    padding-top: 25px;
+    margin-left: 398px;
+}
+
+#footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+/*fim  do rodape*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #00000F;
+    font-family: arial;
+    margin-top: 5px;
+}
+
+/*Codificação da página Clinica*/
+#conteudo {
+    width: 800px;
+    height: 400px;
+    background: #F0FFF0;
+    margin: 15px auto;
+    padding-left: 5px;
+}
+
+.artigo {
+    width: 350px;
+    margin: 5px 8px;
+    float: left;
+}
+
+.artigo p {
+    padding-top: 15px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+/* FIM Codificação da página Clinica*/
+
+/*Codificação da página contato*/
+#section_c {
+    width: 800px;
+    height: 400px;
+    background: #F8F8FF;
+    margin: 1px auto;
+}
+
+.contato {
+    width: 400px;
+    height: 300px;
+    margin: 5px 5px;
+    float: left;
+}
+
+.contato h1 {
+    font-size: 25px;
+}
+
+.contato textarea {
+    resize: none;
+}
+
+.contato1 {
+    width: 350px;
+    height: 300px;
+    margin-left: 15px auto;
+    float: left;
+    text-align: center;
+}
+
+.contato1 h1 {
+    margin-top: 260px;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contato1 p {
+    font-size: 13px;
+}
+
+/*Codificação da página serviço*/
+#conteudo1 {
+    width: 800px;
+    height: 400px;
+    background: #F0FFF0;
+    margin: 15px auto;
+    padding-left: 5px;
+}
+ 
+.artigo1 {
+    width: 350px;
+    margin: 5px 8px;
+    float: left;
+}
+ 
+.artigo1 ul {
+    padding-top: 15px;
+    font-size: 17px;
+    list-style: none;
+    /*retira marcadores*/
+    padding-left: 0px;
+}
+ 
+/*fim da página serviço*/
+
+/*RESPONSIVIDADE celulares	*/
+@media screen and (min-width:330px) and (max-width:480px){
+    body, div{}
+#footer { margin-left:0px;}
+}
+/*RESPOVIVIDADE Ipad  e ipad mini*/
+@media screen and (min-width:768px) and (max-width:1024px){/*ipad*/
+    body, div{}
+    #footer { margin-left:0px;}		
+}	
+
+/*RESPONSIVIDADE ipad air	*/
+@media screen and (min-width:820px) and (max-width:1190px){
+    body, div{}
+#footer { margin-left:9px;}
+}
+
+/*RESPONSIVIDADE ipad pro	*/
+@media screen and (min-width:1024px) and (max-width:1366px){
+    body, div{}
+#footer { margin-left:112px;}
+}
